@@ -1,0 +1,117 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+.meta.sweyla {
+  color: #7FB26C;
+}
+
+.comment {
+  color: #A082B9;
+}
+
+.constant {
+  color: #6BA128;
+}
+
+.constant.language {
+  color: #E300B9;
+}
+
+.entity {
+  color: #B26884;
+}
+
+.entity.name.function {
+  color: #B26884;
+}
+
+.entity.name {
+  color: #A98FF1;
+}
+
+.keyword {
+  color: #7FB26C;
+}
+
+.keyword.operator {
+  color: #879734;
+}
+
+.storage {
+  color: #7FB26C;
+}
+
+.support {
+  color: #FA0051;
+}
+
+.support.function {
+  color: #935261;
+}
+
+.string {
+  color: #CAD130;
+}
+
+.variable {
+  color: #E300B9;
+}
+
+.string .constant {
+  color: #BC7B66;
+}
+
+.invalid {
+  color: #7FB26C;
+}
